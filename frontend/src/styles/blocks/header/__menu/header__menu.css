@@ -1,0 +1,9 @@
+.header__menu {
+    cursor: pointer;
+    background-image: url(./../../../../images/menu.svg);
+    background-color: #000;
+    background-size: contain;
+    width: 24px;
+    height: 18px;
+    border: none;
+}

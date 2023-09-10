@@ -1,0 +1,27 @@
+.header__auth {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.header__auth:hover {
+    opacity: .6;
+    transition: opacity ease-out .3s;
+}
+
+@media screen and (max-width: 999px) {
+    .header__auth {
+        font-size: 16px;
+        margin-right: 27px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header__auth {
+        font-size: 14px;
+    }
+}

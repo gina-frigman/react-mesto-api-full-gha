@@ -1,0 +1,5 @@
+.place__delete_invisible {
+    visibility: 0;
+    opacity: 0;
+    cursor: none;
+}

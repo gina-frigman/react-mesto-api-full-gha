@@ -1,0 +1,14 @@
+.place__like {
+    background-image: url(./../../../../images/like.svg);
+    background-size: cover;
+    border: none;
+    min-height: 19px;
+    min-width: 22px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.place__like:hover {
+    opacity: .5;
+    transition: opacity ease-out .3s;
+}
