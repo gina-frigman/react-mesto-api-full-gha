@@ -34,7 +34,8 @@ class Api {
         return fetch(`${this._baseUrl}/users/me`, {
             method: 'PATCH',
             headers: {
-                "Authorization" : `Bearer ${token}`
+                "Authorization" : `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 name: data.name,
@@ -48,7 +49,8 @@ class Api {
         return fetch(`${this._baseUrl}/users/me/avatar`, {
             method: 'PATCH',
             headers: {
-                "Authorization" : `Bearer ${token}`
+                "Authorization" : `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 avatar: data.avatar
@@ -61,7 +63,8 @@ class Api {
         return fetch(`${this._baseUrl}/cards`, {
             method: 'POST',
             headers: {
-                "Authorization" : `Bearer ${token}`
+                "Authorization" : `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 name: data.title,
@@ -75,7 +78,8 @@ class Api {
         return fetch(`${this._baseUrl}/cards/${cardId}`, {
             method: 'DELETE',
             headers: {
-                "Authorization" : `Bearer ${token}`
+                "Authorization" : `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
         })
         .then(this._checkResponseData);
@@ -93,7 +97,8 @@ class Api {
         return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
             method: 'PUT',
             headers: {
-                "Authorization" : `Bearer ${token}`
+                "Authorization" : `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
         })
         .then(this._checkResponseData);
@@ -103,7 +108,8 @@ class Api {
         return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
             method: 'DELETE',
             headers: {
-                "Authorization" : `Bearer ${token}`
+                "Authorization" : `Bearer ${token}`,
+                "Content-Type": "application/json"
             },
         })
         .then(this._checkResponseData);
