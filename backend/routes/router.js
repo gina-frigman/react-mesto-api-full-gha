@@ -7,8 +7,8 @@ const { validateLogin } = require('../middlewares/validation');
 const NotFoundError = require('../errors/NotFoundError');
 const { auth } = require('../middlewares/auth');
 
-router.post('/sign-up', validateCreateUser, createUser);
-router.post('/sign-in', validateLogin, login);
+router.post('/signup', validateCreateUser, createUser);
+router.post('/signin', validateLogin, login);
 
 router.use('/users', auth, usersRouter);
 router.use('/cards', auth, cardsRouter);

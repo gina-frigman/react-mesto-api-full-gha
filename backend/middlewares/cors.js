@@ -2,7 +2,6 @@ const allowedCors = [
   'https://praktikum.tk',
   'http://praktikum.tk',
   'https://mesto.gina.nomoredomainsicu.ru',
-  'http://localhost:3001',
 ];
 
 module.exports.checkCors = (req, res, next) => {
