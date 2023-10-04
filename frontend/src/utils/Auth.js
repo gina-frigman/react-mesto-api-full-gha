@@ -55,7 +55,7 @@ class Auth {
 };
 
 export const auth = new Auth({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://api.mesto.gina.nomoredomainsrocks.ru',
     headers: {
         'Content-Type': 'application/json'
     }
