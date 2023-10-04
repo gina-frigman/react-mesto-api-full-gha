@@ -203,9 +203,8 @@ function App() {
       <CurrentUserContext.Provider value={currentUser}>
         <Routes>
           <Route path='*' element={<Navigate to='/sign-in' replace />} />
-          <Route path="/sign-up" element={<Register onRegister={handleRegister} />} />
           <Route path="/sign-in" element={<Login onLogin={handleLogin} setUserData={setUserData} />} />
-          <Route path="/sign-up" element={<Register setInfoToolTipState={setInfoToolTipState} setIsInfoToolTipOpen={setIsInfoToolTipOpen} />} />
+          <Route path="/sign-up" element={<Register setInfoToolTipState={setInfoToolTipState} setIsInfoToolTipOpen={setIsInfoToolTipOpen} onRegister={handleRegister} />} />
           <Route path="/" element={<ProtectedRoute element={Main} cards={cards} onEditProfile={handleEditProfileClick}
         onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick} onSignOut={handleSignOut}
         onCardLike={handleCardLike} onCardDelete={handleDeleteCardClick} isLoggedIn={isLoggedIn} userData={userData} />} />
