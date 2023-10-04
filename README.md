@@ -7,6 +7,6 @@
 
 ## ссылки на проект
 
-ip-адрес: 51.250.18.20
-frontend: https://mesto.gina.nomoredomainsicu.ru
-backend: https://api.mesto.gina.nomoredomainsrocks.ru
+ip-адрес 51.250.18.20
+frontend https://mesto.gina.nomoredomainsicu.ru
+backend https://api.mesto.gina.nomoredomainsrocks.ru
